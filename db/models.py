@@ -30,7 +30,7 @@ class Player(models.Model):
     )
     guild = models.ForeignKey(
         Guild,
-        on_delete=models.DO_NOTHING,
+        on_delete=models.SET_NULL,
         null=True,
         related_name="players"
     )
